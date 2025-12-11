@@ -34,7 +34,7 @@ col_longueur = df["Longueur"]
 print(col_longueur)
 
 #3) filtrer les séquences avec la Longueur est supérieur à 10
-print("*********** Filtrage: Longueur supérieurà 10 ***********") 
+print("*********** Filtrage: Longueur supérieur à 10 ***********") 
 #Filtrer les séquences avec la Longueur est supérieur à 10
 filtered_df=df[df["Longueur"]>10]
 print(filtered_df)
@@ -46,7 +46,7 @@ average_gc = df["Pourcentage GC"].mean()
 print(f"Pourcentage moyen de GC:{average_gc:.3f}%")
 
 #5) Ajouter une nouvelle colonne "Catégorie GC"
-print("************* Ajouter une nouvelle colonne catégorie GC *************")
+print("************* Ajouter une nouvelle colonne "catégorie GC" *************")
 #Ajouter une nouvelle colonne "catégorie GC"
 df["Catégorie GC"] = df["Pourcentage GC"].apply(lambda x: "Riche" if x > 55 else ("Moyen" if 45 <= x <= 55 else "Faible"))
 print(df)

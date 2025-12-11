@@ -5,31 +5,31 @@
 
 import pandas as pd 
 
-#Données: séquences d'ADN, longueur, pourcentage de GC
+#Données: Séquences ADN, Longueur, Pourcentage de GC
 data={
-  "séquence": ["ATGCGTACGTA","GCTAGCTAGGCC","GCTAGCTAGGCC","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGT"],
-  "longueur": [12,12,12,10,11,10,10],
-  "pourcentage GC": [50,66.67,58.33,40.45,45,60,50]
+  "Séquence": ["ATGCGTACGTA","GCTAGCTAGGCC","GCTAGCTAGGCC","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGT"],
+  "Longueur": [12,12,12,10,11,10,10],
+  "Pourcentage GC": [50,66.67,58.33,40.45,45,60,50]
   }
 #Création du DataFrame (tableau pandas)
 df = pd.DataFrame(data)
 
 # *** Prmière partie: Création et affichage ***
-print("Analyse des séquence d'ADN")
+print("Analyse des Séquence ADN")
 print(df)
 print("\n")
 
 # *** Deuxième partie: Opréations ***
 print("******* Opréations *******")
 
-# 1) Sélectionner la colonne "séquence"
-sequences = df["séquence"]
+# 1) Sélectionner la colonne "Séquence"
+sequences = df["Séquence"]
 print(sequences)
 print("\n")
 
 
-#2) Sélectionner et afficher uniquement la colonne "longueur"
-print("************* Affichage de la colonne longueur *************\n")
+#2) Sélectionner et afficher uniquement la colonne "Longueur"
+print("************* Affichage de la colonne Longueur *************\n")
 
-col_longueur = df["longueur"]
+col_longueur = df["Longueur"]
 print(col_longueur)

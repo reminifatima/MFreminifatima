@@ -27,17 +27,18 @@ sequences = df["Séquence"]
 print(sequences)
 print("\n")
 
-
 #2) Sélectionner et afficher uniquement la colonne "Longueur"
 print("************* Affichage de la colonne Longueur *************\n")
 
 col_longueur = df["Longueur"]
 print(col_longueur)
+
 #3) filrer les séquences avec la longueur est supérieurr a 10%
 print("*********** Filtrage Avec pourcentage % ***********") 
 Filtrer les séquences avec la longueur est supérieur à 10
 filtered_df=df[df["Longueur"]>10]
 print(filtered_df)
+
 #4) calculer la moyenne du pourcentage de GC aprés la virgule 
 print("*********** Calcul de la moyenne ***********")
 Calculer la moyenne du pourcentage de GC Avec 3 chifrre aprés la virgule

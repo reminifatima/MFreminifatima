@@ -54,13 +54,13 @@ print(df)
 df["Nb_G"] = df["Séquence"].apply(lambda seq:seq.count("G"))
 print(df)
 
-#7 Calculer l'écart-type du %GC de la Longeur
-ecart_gc= df["Pourcantage GC"].std()
-ecart_Longeur=df["Longeur"].std()
+#7 Calculer l'écart-type du %GC de la Longueur
+ecart_gc= df["Pourcentage GC"].std()
+ecart_Longueur=df["Longueur"].std()
 print("\nÉcart-type%GC:",ecart_gc)
-print("Écart-type Longeur:",ecart_longeur)
+print("Écart-type Longueur:",ecart_longueur)
 
-#8) Sauvgarder le tableau final dans un fichieur CSV 
-#sauvgarder le tableau final dans un fichier CSV 
+#8) Sauvegarder le tableau final dans un fichier CSV 
+#sauvegarder le tableau final dans un fichier CSV 
 df.to_csv("tableau_sequenses.csv",index=false)
 print("Fichier CSV sauvgardé avec succés")
